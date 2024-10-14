@@ -11,7 +11,7 @@ const Protfolio = () => {
             <div className="flex justify-center items-center min-h-[calc(100vh-192px)]">
                 <Outlet></Outlet>
             </div>
-            <div className=" h-[128px]">
+            <div className=" h-[128px] bg-black">
                 <Footer></Footer>
             </div>
         </div>

@@ -1,50 +1,72 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi'; // Import React icons
 
 const Navbar = () => {
-    return (
-        <div className="navbar bg-base-100">
-            <div className="navbar-start flex justify-between items-center w-full">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a> Home</a></li>
-                        <li>
-                            <a>About</a>
-                        </li>
-                        <li><a>Service</a></li>
-                        <li><a>Works</a></li>
-                    </ul>
-                </div>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const navlinks = (
+    <>
+      <li className="w-full text-center">
+        <a className="block w-full">Home</a>
+      </li>
+      <li className="w-full text-center">
+        <a className="block w-full">About</a>
+      </li>
+      <li className="w-full text-center">
+        <a className="block w-full">Service</a>
+      </li>
+      <li className="w-full text-center">
+        <a className="block w-full">Works</a>
+      </li>
+    </>
+  );
+
+  return (
+    <nav className="navbar bg-black flex justify-between items-center w-full">
+      <div className="flex justify-between items-center w-full md:hidden">
+        <div className="flex items-center">
+          {/* Mobile Dropdown */}
+          <div className="dropdown">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost md:hidden"
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? (
+                <FiX className="h-5 w-5" />
+              ) : (
+                <FiMenu className="h-5 w-5" />
+              )}
             </div>
-            <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a> Home</a></li>
-                    <li>
-                        <a>About</a>
-                    </li>
-                    <li><a>Service</a></li>
-                    <li><a>Works</a></li>
-                </ul>
-                <button className="btn">"Let's Talk"</button>
-            </div>
+
+            {isMenuOpen && (
+              <ul
+                tabIndex={0}
+                className={`fixed inset-0 flex justify-center items-center gap-3 z-50 flex-col p-2 shadow left-0 top-[60px] h-[35%] w-full bg-black`}
+              >
+                {navlinks}
+              </ul>
+            )}
+          </div>
+          <a className="text-xl font-bold">Abu Saiyed</a>
         </div>
-    );
+        <button className="btn">Let's Talk</button>
+      </div>
+
+      {/* Navbar for tablets and larger devices */}
+      <div className="hidden md:flex justify-between items-center w-full">
+        <a className="text-xl font-bold">Abu Saiyed</a>
+        <ul className="flex space-x-4">{navlinks}</ul>
+        <button className="btn">Let's Talk</button>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
