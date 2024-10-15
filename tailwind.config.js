@@ -6,7 +6,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        hiWiggle: {
+          "25%": { transform: "translateY(0px) rotate(15deg)" },
+          "75%": { transform: "translateY(0px) rotate(-15deg)" },
+        },
+      },
+      animation: {
+        hiWiggle: "hiWiggle 3s infinite ease-in-out",
+      },
+      colors:{
+        primary: "#f79c13"
+      }
+    },
   },
   plugins: [
     require('daisyui'),

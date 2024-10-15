@@ -1,4 +1,5 @@
 import Banner from '../Pages/Banner/Banner';
+import NotFound from '../Pages/ErrorPage/NotFound';
 import Protfolio from '../Protfolio';
 import {
     createBrowserRouter,
@@ -9,7 +10,7 @@ import {
     {
       path: "/",
       element: <Protfolio />,
-    //   errorElement: <ErrorPage />,
+      errorElement: <NotFound />,
       children: [
         {
           index: true,

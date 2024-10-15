@@ -27,7 +27,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="navbar bg-black flex justify-between items-center w-full">
+    <nav className="navbar max-w-7xl mx-auto bg-black flex justify-between items-center w-full">
       <div className="flex justify-between items-center w-full md:hidden">
         <div className="flex items-center">
           {/* Mobile Dropdown */}
@@ -56,14 +56,38 @@ const Navbar = () => {
           </div>
           <a className="text-xl font-bold">Abu Saiyed</a>
         </div>
-        <button className="btn">Let's Talk</button>
+        <button
+          className="bg-[linear-gradient(#2E2E2E,#1E1E1E)] group inline-flex transition-all duration-300 overflow-visible p-2 rounded-full"
+        >
+          <div
+            className="w-full h-full bg-[linear-gradient(to_top,#333,#1E1E1E)] overflow-hidden shadow-[0_0_4px_rgba(255,183,77,0.6)] p-1 rounded-full hover:shadow-[0_0_8px_rgba(255,183,77,0.9)] duration-300"
+          >
+            <div
+              className="w-full h-full text-lg justify-center text-[#F4F4F9] bg-[linear-gradient(#3A3A3A,#1E1E1E)] duration-300 items-center font-medium inline-flex px-3 rounded-full group-hover:text-[#d39e4f]"
+            >
+              <span className="">Hire me</span>
+            </div>
+          </div>
+        </button>
       </div>
 
       {/* Navbar for tablets and larger devices */}
       <div className="hidden md:flex justify-between items-center w-full">
         <a className="text-xl font-bold">Abu Saiyed</a>
         <ul className="flex space-x-4">{navlinks}</ul>
-        <button className="btn">Let's Talk</button>
+        <button
+          className="bg-[linear-gradient(#2E2E2E,#1E1E1E)] group inline-flex transition-all duration-300 overflow-visible p-2 rounded-full"
+        >
+          <div
+            className="w-full h-full bg-[linear-gradient(to_top,#333,#1E1E1E)] overflow-hidden shadow-[0_0_4px_rgba(255,183,77,0.6)] p-1 rounded-full hover:shadow-[0_0_8px_rgba(255,183,77,0.9)] duration-300"
+          >
+            <div
+              className="w-full h-full text-lg justify-center text-[#F4F4F9] bg-[linear-gradient(#3A3A3A,#1E1E1E)] duration-300 items-center font-medium inline-flex px-3 rounded-full group-hover:text-[#d39e4f]"
+            >
+              <span className="">Hire me</span>
+            </div>
+          </div>
+        </button>
       </div>
     </nav>
   );
