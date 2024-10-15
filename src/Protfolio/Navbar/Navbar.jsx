@@ -63,7 +63,7 @@ const Navbar = () => {
             className="w-full h-full bg-[linear-gradient(to_top,#333,#1E1E1E)] overflow-hidden shadow-[0_0_4px_rgba(255,183,77,0.6)] p-1 rounded-full hover:shadow-[0_0_8px_rgba(255,183,77,0.9)] duration-300"
           >
             <div
-              className="w-full h-full text-lg justify-center text-[#F4F4F9] bg-[linear-gradient(#3A3A3A,#1E1E1E)] duration-300 items-center font-medium inline-flex px-3 rounded-full group-hover:text-[#d39e4f]"
+              className="w-full h-full text-lg justify-center text-[#F4F4F9] bg-[linear-gradient(#3A3A3A,#1E1E1E)] duration-300 items-center font-medium inline-flex px-3 rounded-full group-hover:text-primary"
             >
               <span className="">Hire me</span>
             </div>
