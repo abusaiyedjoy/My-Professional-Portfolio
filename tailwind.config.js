@@ -17,7 +17,8 @@ export default {
         hiWiggle: "hiWiggle 3s infinite ease-in-out",
       },
       colors:{
-        primary: "#f79c13"
+        primary: "#f79c13",
+        secondary: "#1E1E1E"
       }
     },
   },

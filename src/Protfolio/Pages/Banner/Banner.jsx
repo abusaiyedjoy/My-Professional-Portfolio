@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { IoHandLeftSharp } from "react-icons/io5";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-import { technologies } from "./Banner";
+import { technologies } from "./banner";
 import title from "./../../../assets/Title.png"
 
 /* eslint-disable react/no-unescaped-entities */
@@ -47,11 +47,11 @@ const Banner = () => {
                     />
                 </div>
                 <div
-                    className="w-full h-full p-3 flex-col bg-neutral-700 rounded-2xl gap-2 flex justify-center"
+                    className="w-full h-full p-3 flex-col bg-neutral-700 rounded-2xl gap-2 flex justify-center roboto"
                 >
                     <div className="text-center">
                         <h2 className="text-2xl font-semibold text-white">Abu Saiyed Joy</h2>
-                        <p className="text-white">Web Developer</p>
+                        <p className="sofia text-white">Web Developer</p>
                     </div>
                     <div className="mt-1 text-center text-white">
                         {/* Social Icons */}
@@ -87,10 +87,10 @@ const Banner = () => {
             <div className="space-y-10 w-[calc(100%-350px)]">
                 <div className="w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-start">
                     <h1 className="flex justify-start gap-1 text-lg font-medium text-white items-center">Hey <IoHandLeftSharp className=" animate-hiWiggle text-[#f79c13]" /> I am <span className="text-[#f79c13]">Abu Saiyed</span></h1>
-                    <h5 className="mb-2 text-4xl max-w-2xl font-bold tracking-tight text-white">
+                    <h5 className="mb-2 text-4xl max-w-2xl font-bold tracking-tight roboto text-white">
                         I'm a web developer based on React JS!
                     </h5>
-                    <p className="text-gray-300">I am a passionate MERN stack developer with a keen eye for design and functionality. With experience in both front-end and back-end technologies, I build seamless, responsive, and efficient web applications.</p>
+                    <p className="text-gray-300 sofia">I am a passionate MERN stack developer with a keen eye for design and functionality. With experience in both front-end and back-end technologies, I build seamless, responsive, and efficient web applications.</p>
                     <p className="mb-3 font-medium text-lg text-gray-400 flex justify-start items-center gap-1">
                         <RiVerifiedBadgeFill className="text-green-500 " /> Available for Freelancing.
                     </p>
@@ -99,7 +99,7 @@ const Banner = () => {
                 <div className="relative w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
                     <div className="">
                         <img className="absolute top-0" src={title} alt="" />
-                        <h5 className="mb-2 text-4xl  font-bold  tracking-tight text-white">
+                        <h5 className="mb-2 text-4xl roboto font-bold  tracking-tight text-white">
                             Technology I have learned!
                         </h5>
                         <img className="absolute top-0 right-5" src={title} alt="" />
