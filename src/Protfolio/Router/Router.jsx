@@ -1,5 +1,5 @@
-import Banner from '../Pages/Banner/Banner.jsx';
 import NotFound from '../Pages/ErrorPage/NotFound';
+import Banner from '../Pages/Home/Banner.jsx';
 import Service from '../Pages/Service/Service';
 import Protfolio from '../Protfolio';
 import About from './../Pages/About/About';

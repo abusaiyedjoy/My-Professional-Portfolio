@@ -26,10 +26,10 @@ const Contact = () => {
                 <p className="mt-3 max-w-lg sofadi">Let’s embark on creative journey together by shaping a visual narrative of your brand in the crowded digital space.</p>
             </div>
 
-            <div className="flex justify-between items-center w-full">
-                <div className="w-full lg:w-[35%] px-6 py-4 lg:border-r-2 border-secondary rounded-r-2xl">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-5 w-full">
+                <div className="w-full lg:w-[35%] px-6 py-4 border-b-2 rounded-b-2xl lg:border-r-2 border-secondary lg:rounded-r-2xl">
 
-                    <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                    <div className="flex-wrap gap-8 mt-6">
                         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
                             {/* Email Contact */}
                             <div className="flex justify-start items-center gap-5">

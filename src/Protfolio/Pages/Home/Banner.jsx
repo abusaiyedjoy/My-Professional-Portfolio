@@ -14,9 +14,9 @@ const Banner = () => {
         { svg: <FaInstagram />, bgColor: 'bg-pink-500', link: 'https://www.instagram.com/abu_saiyed_joy/' },
     ];
     return (
-        <section className="w-full flex justify-between items-start gap-8">
+        <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
             <div
-                className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] py-8 bg-neutral-800 rounded-xl"
+                className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] mx-auto py-8 bg-neutral-800 rounded-xl"
             >
                 <div
                     className="group-hover:-rotate-45 bg-transparent group-hover:scale-150 -top-12 -left-12 absolute shadow-yellow-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-24 h-24"
@@ -84,7 +84,7 @@ const Banner = () => {
                     </button>
                 </div>
             </div>
-            <div className="space-y-10 w-[calc(100%-350px)]">
+            <div className="space-y-10 lg:w-[calc(100%-350px)]">
                 <div className="w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-start">
                     <h1 className="flex justify-start gap-1 text-lg font-medium text-white items-center">Hey <IoHandLeftSharp className=" animate-hiWiggle text-[#f79c13]" /> I am <span className="text-[#f79c13]">Abu Saiyed</span></h1>
                     <h5 className="mb-2 text-4xl max-w-2xl font-bold tracking-tight roboto text-white">

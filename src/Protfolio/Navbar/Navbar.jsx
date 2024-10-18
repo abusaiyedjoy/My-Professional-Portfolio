@@ -51,7 +51,7 @@ const Navbar = () => {
               </ul>
             )}
           </div>
-          <a href='/' className="text-xl font-bold">Abu Saiyed</a>
+          <a href='/' className="text-xl font-bold text-gray-200">Abu Saiyed</a>
         </div>
         <button
           className="bg-[linear-gradient(#2E2E2E,#1E1E1E)] group inline-flex transition-all duration-300 overflow-visible p-2 rounded-full"
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Navbar for tablets and larger devices */}
       <div className="hidden md:flex justify-between items-center w-full">
-        <a href='/' className="text-2xl font-bold">Abu Saiyed</a>
+        <a href='/' className="text-2xl font-bold text-gray-200">Abu Saiyed</a>
         <ul className='list-none flex justify-center items-center gap-5'>
         {navLinks.map((nav) => (
             <li
