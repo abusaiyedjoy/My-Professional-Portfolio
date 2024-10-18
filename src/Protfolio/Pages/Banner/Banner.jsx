@@ -90,9 +90,10 @@ const Banner = () => {
                     <h5 className="mb-2 text-4xl max-w-2xl font-bold tracking-tight roboto text-white">
                         I'm a web developer based on React JS!
                     </h5>
-                    <p className="text-gray-300 sofia">I am a passionate MERN stack developer with a keen eye for design and functionality. With experience in both front-end and back-end technologies, I build seamless, responsive, and efficient web applications.</p>
+                    <p className="max-w-2xl text-gray-300 sofia">Are you looking for a MERN stack web developer to build your website and grow your business?
+                    Let's shake hands with me.</p>
                     <p className="mb-3 font-medium text-lg text-gray-400 flex justify-start items-center gap-1">
-                        <RiVerifiedBadgeFill className="text-green-500 " /> Available for Freelancing.
+                        <RiVerifiedBadgeFill className="text-green-500 " /> Available for Remote working.
                     </p>
 
                 </div>

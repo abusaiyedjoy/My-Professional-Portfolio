@@ -15,6 +15,10 @@ import {createBrowserRouter} from "react-router-dom";
       errorElement: <NotFound />,
       children: [
         {
+          index: true,
+          element: <Banner />,
+        },
+        {
           path: "/home",
           element: <Banner />,
         },

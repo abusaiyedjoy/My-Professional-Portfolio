@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Link } from "react-router-dom";
+
 const Common = () => {
     return (
         <div className="max-w-7xl mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
@@ -14,7 +16,7 @@ const Common = () => {
             <button
                 className="bg-[linear-gradient(#2E2E2E,#1E1E1E)] group inline-flex transition-all duration-300 overflow-visible p-2 rounded-full"
             >
-                <div
+                <Link to={"/contact"}
                     className="w-full h-full bg-[linear-gradient(to_top,#333,#1E1E1E)] overflow-hidden shadow-[0_0_4px_rgba(255,183,77,0.6)] p-1 rounded-full hover:shadow-[0_0_8px_rgba(255,183,77,0.9)] duration-300"
                 >
                     <div
@@ -22,7 +24,7 @@ const Common = () => {
                     >
                         <span className="">Let's  Talk</span>
                     </div>
-                </div>
+                </Link>
             </button>
 
         </div>
