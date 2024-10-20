@@ -3,6 +3,7 @@ import { IoHandLeftSharp } from "react-icons/io5";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { technologies } from "./banner";
 import title from "./../../../assets/Title.png"
+import resume from "./../../../assets/Abu Saiyed Joy Protfolio.pdf"
 
 /* eslint-disable react/no-unescaped-entities */
 const Banner = () => {
@@ -15,7 +16,7 @@ const Banner = () => {
     ];
     return (
         <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
-            <div
+            <div data-aos="fade-right" data-aos-duration="2000"
                 className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] mx-auto py-8 bg-neutral-800 rounded-xl"
             >
                 <div
@@ -75,17 +76,17 @@ const Banner = () => {
                         <div
                             className="w-full h-full bg-[linear-gradient(to_top,#333,#1E1E1E)] overflow-hidden shadow-[0_0_4px_rgba(255,183,77,0.6)] p-1 rounded-full hover:shadow-[0_0_8px_rgba(255,183,77,0.9)] duration-300"
                         >
-                            <div
+                            <a href={resume} download={resume}
                                 className="w-full h-full text-2xl justify-center text-[#F4F4F9] bg-[linear-gradient(#3A3A3A,#1E1E1E)] duration-300 items-center font-bold inline-flex px-8 py-2 rounded-full group-hover:text-primary"
                             >
                                 <span className="">Download CV</span>
-                            </div>
+                            </a>
                         </div>
                     </button>
                 </div>
             </div>
             <div className="space-y-10 lg:w-[calc(100%-350px)]">
-                <div className="w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-start">
+                <div data-aos="zoom-in" data-aos-duration="2000" className="w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-start">
                     <h1 className="flex justify-start gap-1 text-lg font-medium text-white items-center">Hey <IoHandLeftSharp className=" animate-hiWiggle text-[#f79c13]" /> I am <span className="text-[#f79c13]">Abu Saiyed</span></h1>
                     <h5 className="mb-2 text-4xl max-w-2xl font-bold tracking-tight roboto text-white">
                         I'm a web developer based on React JS!
@@ -97,7 +98,7 @@ const Banner = () => {
                     </p>
 
                 </div>
-                <div className="relative w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
+                <div data-aos="zoom-in" data-aos-duration="2000" className="relative w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
                     <div className="">
                         <img className="absolute top-0" src={title} alt="" />
                         <h5 className="mb-2 text-4xl roboto font-bold  tracking-tight text-white">

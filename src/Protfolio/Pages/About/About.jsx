@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import { FaCode } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 
@@ -9,7 +8,7 @@ const About = () => {
         <section className="">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                 <div
-
+                     data-aos="fade-right" data-aos-duration="2000"
                     className="cursor-pointer group overflow-hidden px-2 pt-2 border-b-4 border-secondary duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] bg-neutral-800 rounded-xl"
                 >
                     <div
@@ -41,7 +40,7 @@ const About = () => {
                         />
                     </div>
                 </div>
-                <div className="w-full mx-auto bg-neutral-800 p-8 rounded-xl space-y-8 shadow text-start">
+                <div data-aos="fade-left" data-aos-duration="2000" className="w-full mx-auto bg-neutral-800 p-8 rounded-xl space-y-8 shadow text-start">
                     <h1 className="flex justify-start gap-2 text-2xl font-medium text-primary items-center relative w-36">About me...! <span className="mt-2 absolute left-0 bottom-0 h-[4px] z-10 rounded-full bg-primary w-[30%]"></span></h1>
                     <div className="space-y-3 lg:space-y-5">
                         <p className="text-gray-300 sofia ">I am a passionate MERN stack developer with a keen eye for design and functionality. With experience in both front-end and back-end technologies, I build seamless, responsive, and efficient web applications.
@@ -54,7 +53,7 @@ const About = () => {
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-8">
-                <div className="w-full px-6 bg-secondary rounded-2xl py-5">
+                <div data-aos="zoom-in" data-aos-duration="2000" className="w-full px-6 bg-secondary rounded-2xl py-5">
                     <h1 className="text-2xl pl-4 font-semibold text-gray-300 roboto">Education</h1>
                     <div className="">
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
@@ -88,7 +87,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full px-6 bg-secondary rounded-2xl py-5">
+                <div data-aos="zoom-in" data-aos-duration="2000" className="w-full px-6 bg-secondary rounded-2xl py-5">
                     <h1 className="text-2xl pl-4 font-semibold text-gray-300 roboto">Experience</h1>
                     <div className="">
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">

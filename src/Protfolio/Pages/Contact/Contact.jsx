@@ -21,13 +21,13 @@ const Contact = () => {
     };
     return (
         <section className="my-3 w-full">
-            <div>
-                <h1 className="mt-2 text-2xl font-semibold md:text-3xl max-w-[420px] sofia text-[##E5E3CB]">It's high time to talk about your project.</h1>
+            <div data-aos="fade-down" data-aos-duration="2000">
+                <h1 className="mt-2 text-2xl font-semibold md:text-3xl max-w-[420px] sofia text-[#f3f0dc]">It's high time to talk about your project.</h1>
                 <p className="mt-3 max-w-lg sofadi">Let’s embark on creative journey together by shaping a visual narrative of your brand in the crowded digital space.</p>
             </div>
 
             <div className="flex flex-col lg:flex-row justify-between items-center gap-5 w-full">
-                <div className="w-full lg:w-[35%] px-6 py-4 border-b-2 rounded-b-2xl lg:border-r-2 border-secondary lg:rounded-r-2xl">
+                <div data-aos="fade-right" data-aos-duration="2000" className="w-full lg:w-[35%] px-6 py-4 border-b-2 rounded-b-2xl lg:border-r-2 border-secondary lg:rounded-r-2xl">
 
                     <div className="flex-wrap gap-8 mt-6">
                         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
@@ -67,7 +67,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full lg:w-[60%] bg-neutral-900 p-8 rounded-xl">
+                <form data-aos="zoom-in" data-aos-duration="2000" onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-full lg:w-[60%] bg-neutral-900 p-8 rounded-xl">
                     {/* Name Field */}
                     <div>
                         <input

@@ -1,6 +1,5 @@
 import NotFound from '../Pages/ErrorPage/NotFound';
 import Banner from '../Pages/Home/Banner.jsx';
-import Service from '../Pages/Service/Service';
 import Protfolio from '../Protfolio';
 import About from './../Pages/About/About';
 import Contact from './../Pages/Contact/Contact';
@@ -25,10 +24,6 @@ import {createBrowserRouter} from "react-router-dom";
         {
           path: "about",
           element: <About />,
-        },
-        {
-          path: "service",
-          element: <Service />,
         },
         {
           path: "project",
