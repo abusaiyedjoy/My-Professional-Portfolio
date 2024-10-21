@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Common = () => {
     return (
-        <div data-aos="fade-up" data-aos-duration="2000" className="max-w-7xl mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
+        <div data-aos="fade-up" data-aos-duration="1000" className="max-w-7xl mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-center">
             <a href="#">
                 <h5 className="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Let's Work <span className="text-primary">Together.</span>

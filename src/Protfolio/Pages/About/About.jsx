@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Helmet } from "react-helmet";
 import { FaCode } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 
@@ -6,6 +7,9 @@ import { PiStudentBold } from "react-icons/pi";
 const About = () => {
     return (
         <section className="">
+            <Helmet>
+                <title>Abu Saiyed | About</title>
+            </Helmet>
             <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                 <div
                      data-aos="fade-right" data-aos-duration="2000"

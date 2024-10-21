@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
 import { BsFillAirplaneEnginesFill } from "react-icons/bs";
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -21,6 +22,9 @@ const Contact = () => {
     };
     return (
         <section className="my-3 w-full">
+            <Helmet>
+                <title>Abu Saiyed | Contact</title>
+            </Helmet>
             <div data-aos="fade-down" data-aos-duration="2000">
                 <h1 className="mt-2 text-2xl font-semibold md:text-3xl max-w-[420px] sofia text-[#f3f0dc]">It's high time to talk about your project.</h1>
                 <p className="mt-3 max-w-lg sofadi">Let’s embark on creative journey together by shaping a visual narrative of your brand in the crowded digital space.</p>

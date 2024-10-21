@@ -4,6 +4,7 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { technologies } from "./banner";
 import title from "./../../../assets/Title.png"
 import resume from "./../../../assets/Abu Saiyed Joy Protfolio.pdf"
+import { Helmet } from "react-helmet";
 
 /* eslint-disable react/no-unescaped-entities */
 const Banner = () => {
@@ -15,7 +16,10 @@ const Banner = () => {
         { svg: <FaInstagram />, bgColor: 'bg-pink-500', link: 'https://www.instagram.com/abu_saiyed_joy/' },
     ];
     return (
-        <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
+        <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">    
+            <Helmet>
+                <title>Abu Saiyed Joy | Home</title>
+            </Helmet>
             <div data-aos="fade-right" data-aos-duration="2000"
                 className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] mx-auto py-8 bg-neutral-800 rounded-xl"
             >
@@ -92,7 +96,7 @@ const Banner = () => {
                         I'm a web developer based on React JS!
                     </h5>
                     <p className="max-w-2xl text-gray-300 sofia">Are you looking for a MERN stack web developer to build your website and grow your business?
-                    Let's shake hands with me.</p>
+                        Let's shake hands with me.</p>
                     <p className="mb-3 font-medium text-lg text-gray-400 flex justify-start items-center gap-1">
                         <RiVerifiedBadgeFill className="text-green-500 " /> Available for Remote working.
                     </p>

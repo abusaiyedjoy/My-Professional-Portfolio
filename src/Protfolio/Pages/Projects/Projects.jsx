@@ -5,11 +5,15 @@ import image2 from "./../../../assets/ProjectsImage/Projects2.jpeg";
 import { SiLivewire } from "react-icons/si";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet";
 AOS.init();
 
 const Projects = () => {
     return (
         <section id="project" className="px-4 overflow-hidden">
+            <Helmet>
+                <title>Abu Saiyed | Projects</title>
+            </Helmet>
             <div>
                 <h2 data-aos="fade-down"
                     data-aos-easing="linear"
