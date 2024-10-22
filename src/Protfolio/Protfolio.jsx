@@ -5,11 +5,11 @@ import Common from "./Common/Common";
 
 const Protfolio = () => {
     return (
-        <div className="bg-black px-5">
-            <div className=" h-[64px]">
+        <div className="bg-black px-5 min-h-screen">
+            <div className=" h-[74px]">
                 <Navbar></Navbar>
             </div>
-            <div className=" mt-3 flex justify-center items-center min-h-[calc(100vh-192px)] max-w-7xl mx-auto">
+            <div className=" mt-3 flex justify-center items-center h-full max-w-7xl mx-auto">
                 <Outlet></Outlet>
             </div>
             <div className="mt-6">

@@ -16,12 +16,12 @@ const Banner = () => {
         { svg: <FaInstagram />, bgColor: 'bg-pink-500', link: 'https://www.instagram.com/abu_saiyed_joy/' },
     ];
     return (
-        <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">    
+        <section className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
             <Helmet>
                 <title>Abu Saiyed Joy | Home</title>
             </Helmet>
             <div data-aos="fade-right" data-aos-duration="2000"
-                className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[350px] mx-auto py-8 bg-neutral-800 rounded-xl"
+                className="cursor-pointer group overflow-hidden p-8 duration-1000 hover:duration-1000 relative w-full h-full sm:w-[520px] md:w-[600px] lg:w-[350px] mx-auto py-8 bg-neutral-800 rounded-xl"
             >
                 <div
                     className="group-hover:-rotate-45 bg-transparent group-hover:scale-150 -top-12 -left-12 absolute shadow-yellow-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-24 h-24"
@@ -52,7 +52,7 @@ const Banner = () => {
                     />
                 </div>
                 <div
-                    className="w-full h-full p-3 flex-col bg-neutral-700 rounded-2xl gap-2 flex justify-center roboto"
+                    className="w-full h-full z-10 p-3 flex-col bg-neutral-700 rounded-2xl gap-2 flex justify-center roboto"
                 >
                     <div className="text-center">
                         <h2 className="text-2xl font-semibold text-white">Abu Saiyed Joy</h2>
@@ -88,6 +88,27 @@ const Banner = () => {
                         </div>
                     </button>
                 </div>
+                <div
+                    className="group-hover:-rotate-45 bg-transparent group-hover:scale-150 -bottom-12 -right-12 absolute shadow-yellow-800 -z-30 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-24 h-24"
+                ></div>
+                <div
+                    className="group-hover:rotate-45 bg-transparent group-hover:scale-150 -z-30 bottom-44 right-14 absolute shadow-red-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-24 h-24"
+                ></div>
+                <div
+                    className="group-hover:-rotate-45 bg-transparent group-hover:scale-150 -z-30 bottom-24 right-56 absolute shadow-sky-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-24 h-24"
+                ></div>
+                <div
+                    className="group-hover:-rotate-45 bg-transparent group-hover:scale-150 -z-20 bottom-12 right-12 absolute shadow-red-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-12 h-12"
+                ></div>
+                <div
+                    className="group-hover:rotate-45 bg-transparent group-hover:scale-150 -z-20 bottom-12 right-12 absolute shadow-green-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-44 h-44"
+                ></div>
+                <div
+                    className="group-hover:rotate-45 bg-transparent group-hover:scale-150 -z-20 -bottom-24 -right-12 absolute shadow-sky-800 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-64 h-64"
+                ></div>
+                <div
+                    className="group-hover:-rotate-45 -z-20 bg-transparent group-hover:scale-150 bottom-24 right-12 absolute shadow-sky-500 shadow-inner rounded-xl transition-all ease-in-out group-hover:duration-1000 duration-1000 w-4 h-4"
+                ></div>
             </div>
             <div className="space-y-10 lg:w-[calc(100%-350px)]">
                 <div data-aos="zoom-in" data-aos-duration="2000" className="w-full mx-auto bg-neutral-800 p-6 rounded-xl space-y-4 shadow text-start">
