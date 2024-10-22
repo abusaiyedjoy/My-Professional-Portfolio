@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 
 ## Live Portfolio
 
-You can view my portfolio live at: [Live Link](#https://abusaiyedjoy.netlify.app/)
+You can view my portfolio live at: [Live Link](https://abusaiyedjoy.netlify.app/)
 
 ## Table of Contents
 
@@ -50,6 +50,6 @@ Check out the full list of projects in the [Projects](#projects) section of my p
 Feel free to reach out to me!
 
 - **Email:** abusaiyedjoy1@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](#https://www.linkedin.com/in/abu-saiyed-joy)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/abu-saiyed-joy)
 
 Thank you for visiting my portfolio!
