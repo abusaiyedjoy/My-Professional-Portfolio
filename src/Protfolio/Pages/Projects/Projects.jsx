@@ -32,6 +32,7 @@ const Projects = () => {
                     data-aos-duration="500" className={`text-white roboto font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-center`}>
                     My Projects
                 </h2>
+                
             </div>
             <div className=" flex flex-wrap justify-center gap-4 my-3 items-center w-full">
                 {/* Projects 1 */}
